@@ -1,1 +1,27 @@
 // Mixins Here
+
+//Nav styling
+.nav-logo() {
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav-links() {
+  font-size: 1.6rem;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #22283a;
+}
+
+//sign up button
+
+.btn-sign(@bg; @color; @radius) {
+  font-size: 1.8rem;
+  background-color: @bg;
+  color: @color;
+  display: inline;
+  padding: 8px 18px;
+  border-radius: @radius;
+}
