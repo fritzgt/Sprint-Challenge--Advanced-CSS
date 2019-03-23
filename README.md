@@ -38,12 +38,12 @@ Adaptive websites use hard coded pixels and media queries for different device a
 
 2. Describe what it means to be mobile first vs desktop first.
 
-A mobile first implies to design and code the website for mobile devices first and then scale up for bigger screens and we would use min-width media queries
+Mobile first implies to design and code the website for mobile devices first and then scale up for bigger screens and we would use min-width media queries
 Desktop first would be to starting the design and code for desktops and scale down for smaller screens using max-width for media queries
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-REM is relative to the root element so by setting the font size to 62.5% which would be equivalent to 10px (must browser’s default font size is 16 %) there for for developers is easier calculate the px equivalent in rem units ex 1.6rem = 16px
+REM is relative to the root element so by setting the font size to 62.5% would be equivalent to 10px (must browser’s default font size is 16 %) there for for developers is easier calculate the px equivalent in rem units ex 1.6rem = 16px
 
 4. How would you describe preprocessing to someone new to CSS?
 
