@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive website use hard coded pixels and media queries for different device and is faster to build, while a responsive website would use responsive units instead and accommodates thousands of devices therefore takes longer to build.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile first implies to design and code the website for mobile devices first and then scale up for bigger screens and we would use min-width media queries
+Desktop first would be to starting the design and code for desktops and scale down for smaller screens using max-width for media queries
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+REM is relative to the root element so by setting the font size to 62.5% which would be equivalent to 10px (must browser’s default font size is 16 %) there for for developers is easier calculate the px equivalent in rem units ex 1.6rem = 16px
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allow developers to write css in a different syntax, which increases productivity because the code is more organize and easier to read, also it allows to write more DRY code due to the many features like variables, escaping, mixing to mention a few.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept would have to be nesting, this is a game changer for me since it make the code easier to read and more organize, as to the concept that give me the most trouble I feel comfortable we all the concepts we have seem so far but I was reading the documentation and I notice that there is also much more to learn and the functions seems to be a concept that I would have to spend more time getting use to.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
@@ -54,14 +65,14 @@ Follow these steps to set up your project:
 
 - [x] Create a forked copy of this project.
 - [x] Add your project manager as collaborator on Github.
-- [] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
 
