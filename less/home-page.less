@@ -75,12 +75,19 @@
       }
 
       .btn {
-        .btn-sign(@btn-bg-color; @porcelain; 5px);
+        .btn-sign(inline; 8px);
 
         &:hover {
           background-color: lighten(@porcelain, 0);
           color: lighten(@btn-bg-color, 0);
         }
+        @media @phone {
+          .btn-sign(block; 15px);
+        }
+      }
+      @media @phone {
+        width: 100%;
+        padding-top: 20px;
       }
     }
 
@@ -93,6 +100,17 @@
         height: auto;
         border-radius: 10px;
       }
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
+    @media @phone {
+      padding: 20px;
     }
   }
 } // home
