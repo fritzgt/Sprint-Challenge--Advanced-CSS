@@ -56,6 +56,11 @@
 
       .btn {
         .btn-sign(@btn-bg-color; @porcelain; 5px);
+
+        &:hover {
+          background-color: lighten(@porcelain, 0);
+          color: lighten(@btn-bg-color, 0);
+        }
       }
     }
 
