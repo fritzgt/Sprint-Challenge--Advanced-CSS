@@ -171,11 +171,21 @@ nav h1 {
   text-align: center;
   padding-top: 20px;
 }
+nav h1:hover {
+  color: #5cbff2;
+  transition-property: color;
+  transition-duration: 1s;
+}
 nav a {
   font-size: 1.6rem;
   padding: 20px 10px;
   text-decoration: none;
   color: #22283a;
+}
+nav a:hover {
+  color: #5cbff2;
+  transition-property: color;
+  transition-duration: 1s;
 }
 footer {
   color: #22283B;

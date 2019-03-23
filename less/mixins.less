@@ -12,7 +12,13 @@
   font-size: 1.6rem;
   padding: 20px 10px;
   text-decoration: none;
-  color: #22283a;
+  color: @btn-bg-color;
+}
+
+.hover-animation(@color) {
+  color: @color;
+  transition-property: color;
+  transition-duration: 1s;
 }
 
 //sign up button

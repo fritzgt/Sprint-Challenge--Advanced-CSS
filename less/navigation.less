@@ -7,9 +7,17 @@ nav {
 
   h1 {
     .nav-logo();
+
+    &:hover {
+      .hover-animation(@nav-animation);
+    }
   }
 
   a {
     .nav-links();
+
+    &:hover {
+      .hover-animation(@nav-animation);
+    }
   }
 }
