@@ -1,17 +1,19 @@
 // Home Content
 
 .home {
-
   .intro {
-
+    img {
+      @media @phone {
+        width: 100%;
+      }
+    }
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -24,6 +26,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -58,18 +75,42 @@
       }
 
       .btn {
+        .btn-sign(inline; 8px);
+
+        &:hover {
+          background-color: lighten(@porcelain, 0);
+          color: lighten(@btn-bg-color, 0);
+        }
+        @media @phone {
+          .btn-sign(block; 15px);
+        }
+      }
+      @media @phone {
+        width: 100%;
+        padding-top: 20px;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
+    @media @phone {
+      padding: 20px;
     }
   }
-}// home
+} // home
